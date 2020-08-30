@@ -1,0 +1,6 @@
+# ignore MacOS DS_Store for all directory+subdir
+# sometimes it is also named ._.DS_Store so
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
