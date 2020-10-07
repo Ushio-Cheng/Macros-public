@@ -21,3 +21,7 @@ Usecase:
 
 `toucht`, and then `open`
 => would inherit behavior from toucht
+
+## Installation?
+
+Just append the `zshrc.sh` content to `~/.zshrc`
