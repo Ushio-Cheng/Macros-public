@@ -10,10 +10,12 @@ Caveat: do not specify path instead of filename. it would only look for template
 (but can also be a useful feature as long as you are aware of that)
 
 - build on top of `touch`, thus `toucht`
-- Add a new behavior to touch
+- Add some new behavior to touch
   - that, if `.template` exists in current directory, the file created would copy the content in `.template`
+  - If `.touchtInstructions.sh` exists in current directory, the script will do nothing other then call that script.
 
 Usecase:
+
 - especially useful for non-text file because some structural code/content is needed for most of them
 - Also can be used to create Note templates, if you store your notes as MD files.
 
@@ -21,6 +23,8 @@ Usecase:
 
 `toucht`, and then `open`
 => would inherit behavior from toucht
+
+REMARK: if `.touchtInstructions.sh` exists, it must echo the filename created for the open part to work !!!!
 
 ## Installation?
 
